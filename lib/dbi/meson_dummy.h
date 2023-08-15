@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2023 by Sukchan Lee <acetcom@gmail.com>
+ * Copyright (C) 2019-2022 by Sukchan Lee <acetcom@gmail.com>
  *
  * This file is part of Open5GS.
  *
@@ -17,22 +17,18 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-#ifndef SEPP_N32C_BUILD_H
-#define SEPP_N32C_BUILD_H
-
-#include "context.h"
-
-#include "meson_dummy.h"
+#ifndef MESON_DUMMY_H
+#define MESON_DUMMY_H
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-ogs_sbi_request_t *sepp_n32c_handshake_build_security_capability_request(
-        sepp_node_t *sepp_node, bool none);
+struct dummy_bson;
+typedef struct dummy_bson bson_t;
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif /* SEPP_N32C_BUILD_H */
+#endif /* MESON_DUMMY_H */

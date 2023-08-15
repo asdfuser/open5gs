@@ -34,7 +34,9 @@ version_conf.set_quoted('OPEN5GS_VERSION', package_version)
 configure_file(output : 'version.h', configuration : version_conf)
 
 subdir('mme')
-subdir('hss')
+if get_option('mongodb')
+	subdir('hss')
+endif
 subdir('sgwc')
 subdir('sgwu')
 subdir('pcrf')
