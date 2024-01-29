@@ -1,3 +1,10 @@
+open5gs (2.7.0sysmocom1) unstable; urgency=medium
+
+  * Remove mongodb dependency
+  * Use default APN if none could be found
+
+ -- Daniel Willmann <dwillmann@sysmocom.de>  Mon, 29 Jan 2024 20:17:10 +0100
+
 open5gs (2.7.0) unstable; urgency=medium
 
   * 5G Roaming with SEPP

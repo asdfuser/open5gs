@@ -14,7 +14,6 @@ Build-Depends: debhelper (>= 11),
                libgcrypt-dev,
                libssl-dev,
                libidn11-dev,
-               libmongoc-dev,
                libbson-dev,
                libsctp-dev,
                libyaml-dev,
@@ -126,7 +125,6 @@ Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         mongodb-org | mongodb,
          open5gs-common (= ${binary:Version})
 Description: PCRF (Policy and Charging Rules Function)
  Open5GS is a C-language implementation of 5G Core and EPC
