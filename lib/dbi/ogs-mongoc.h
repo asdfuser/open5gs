@@ -24,6 +24,9 @@
 #ifndef OGS_MONGOC_H
 #define OGS_MONGOC_H
 
+/* STUB to disable building with mongodb (OS#6215) */
+#define MONGOC_CHECK_VERSION(a, b, c) false
+
 #ifdef __cplusplus
 extern "C" {
 #endif /* __cplusplus */
